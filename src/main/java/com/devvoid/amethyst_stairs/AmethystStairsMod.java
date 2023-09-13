@@ -3,10 +3,10 @@ package com.devvoid.amethyst_stairs;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -31,6 +31,12 @@ public class AmethystStairsMod implements ModInitializer {
 		register("amethyst_stairs", new StairsBlock(Blocks.AMETHYST_BLOCK.getDefaultState(), AMETHYST));
 		register("amethyst_slab", new SlabBlock(AMETHYST));
 		register("amethyst_wall", new WallBlock(AMETHYST));
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content ->
+				content.addAfter(Items.AMETHYST_BLOCK,
+					BLOCKS.get("amethyst_stairs"),
+					BLOCKS.get("amethyst_slab"),
+					BLOCKS.get("amethyst_wall")));
 	}
 
 	private static void register(String name, Block block) {
