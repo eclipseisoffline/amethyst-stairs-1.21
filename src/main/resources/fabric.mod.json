@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "amethyst_stairs",
+	"version": "${version}",
+	"name": "Amethyst Stairs",
+	"description": "Adds amethyst stairs, slabs, and walls.",
+	"authors": [
+		"PrismaticVoid"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/amethyst-stairs",
+		"sources": "https://github.com/devvoid/amethyst-stairs"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/amethyst_stairs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.devvoid.amethyst_stairs.AmethystStairsMod"
+		],
+		"fabric-datagen": [
+			"com.devvoid.amethyst_stairs.AmethystStairsModDataGenerator"
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
