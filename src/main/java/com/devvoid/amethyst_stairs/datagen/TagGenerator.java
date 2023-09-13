@@ -26,7 +26,8 @@ public class TagGenerator extends FabricTagProvider.BlockTagProvider {
                 .add(reg.get("amethyst_slab"))
                 .add(reg.get("amethyst_wall"));
 
-        getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(reg.get("amethyst_wall"));
+        getOrCreateTagBuilder(BlockTags.STAIRS).add(reg.get("amethyst_stairs"));
+        getOrCreateTagBuilder(BlockTags.SLABS).add(reg.get("amethyst_slab"));
+        getOrCreateTagBuilder(BlockTags.WALLS).add(reg.get("amethyst_wall"));
     }
 }
