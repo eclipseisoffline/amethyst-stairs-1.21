@@ -1,4 +1,6 @@
-// 1.20.1	2023-09-13T02:37:31.8718986	Amethyst Stairs/Tags for minecraft:block
-566e0cc8b76053397628855cd77f589a07880d5f data\minecraft\tags\blocks\crystal_sound_blocks.json
-566e0cc8b76053397628855cd77f589a07880d5f data\minecraft\tags\blocks\mineable\pickaxe.json
-81bcd91ef546e4965180299807e140e0e7e4ea54 data\minecraft\tags\blocks\walls.json
+// 1.21	2024-07-01T10:28:52.990237217	Amethyst Stairs/Tags for minecraft:block
+841d368435769ddb2e06aefe05eec38eee4b6303 data/minecraft/tags/block/slabs.json
+09665d393e7e5452b08a0b9d8e1d523a9a58b37d data/minecraft/tags/block/walls.json
+3369409211c329c8124d2d02216e14b23d316d1b data/minecraft/tags/block/mineable/pickaxe.json
+329f268dfcb6038913f60f22d0a4b3ce98919696 data/minecraft/tags/block/stairs.json
+3369409211c329c8124d2d02216e14b23d316d1b data/minecraft/tags/block/crystal_sound_blocks.json

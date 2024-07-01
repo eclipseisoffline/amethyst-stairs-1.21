@@ -5,7 +5,8 @@
 	"name": "Amethyst Stairs",
 	"description": "Adds amethyst stairs, slabs, and walls.",
 	"authors": [
-		"PrismaticVoid"
+		"PrismaticVoid",
+		"eclipseisoffline"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/amethyst-stairs",
@@ -25,11 +26,8 @@
 	"mixins": [
 	],
 	"depends": {
-		"fabricloader": ">=0.14.22",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${minecraft}",
+		"fabric": "*"
 	}
 }

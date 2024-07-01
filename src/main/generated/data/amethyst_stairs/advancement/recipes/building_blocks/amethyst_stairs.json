@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:amethyst_block"
-            ]
+            "items": "minecraft:amethyst_block"
           }
         ]
       },
@@ -15,21 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "amethyst_stairs:amethyst_wall"
+        "recipe": "amethyst_stairs:amethyst_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_amethyst_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_amethyst_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "amethyst_stairs:amethyst_wall"
+      "amethyst_stairs:amethyst_stairs"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -7,12 +7,12 @@
     }
   },
   "pattern": [
-    "###",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {
-    "count": 6,
-    "item": "amethyst_stairs:amethyst_wall"
-  },
-  "show_notification": true
+    "count": 4,
+    "id": "amethyst_stairs:amethyst_stairs"
+  }
 }

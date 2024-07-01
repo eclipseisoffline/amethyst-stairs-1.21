@@ -2,9 +2,7 @@ package com.devvoid.amethyst_stairs;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -15,9 +13,8 @@ import net.minecraft.util.Identifier;
 import java.util.HashMap;
 
 public class AmethystStairsMod implements ModInitializer {
-    //public static final Logger LOGGER = LoggerFactory.getLogger("amethyst_stairs");
 
-	public static FabricBlockSettings AMETHYST = FabricBlockSettings.create()
+	public static AbstractBlock.Settings AMETHYST = AbstractBlock.Settings.create()
 			.mapColor(MapColor.PURPLE)
 			.strength(1.5f)
 			.sounds(BlockSoundGroup.AMETHYST_BLOCK)
@@ -40,11 +37,11 @@ public class AmethystStairsMod implements ModInitializer {
 	}
 
 	private static void register(String name, Block block) {
-		register(name, block, new FabricItemSettings());
+		register(name, block, new Item.Settings());
 	}
 
-	private static void register(String name, Block block, FabricItemSettings settings) {
-		var id = new Identifier("amethyst_stairs", name);
+	private static void register(String name, Block block, Item.Settings settings) {
+		var id = Identifier.of("amethyst_stairs", name);
 
 		var reg_block = Registry.register(Registries.BLOCK, id, block);
 		BLOCKS.put(name, reg_block);
