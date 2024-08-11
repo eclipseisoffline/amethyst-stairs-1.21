@@ -1,4 +1,4 @@
-// 1.21	2024-07-01T10:28:52.991173701	Amethyst Stairs/Block Loot Tables
+// 1.21.1	2024-07-01T10:28:52.991173701	Amethyst Stairs/Block Loot Tables
 b36374ebe1e9e0f342782e9a9cf464f5dcdfce54 data/amethyst_stairs/loot_table/blocks/amethyst_wall.json
 d36f95aaacea36bc021e555d4e7d032b376e88de data/amethyst_stairs/loot_table/blocks/amethyst_slab.json
 80e44121e03f1018ec5a5d7ffa221db7308dc2f6 data/amethyst_stairs/loot_table/blocks/amethyst_stairs.json
